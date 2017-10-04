@@ -140,9 +140,7 @@ dependencies:
   - jupyter-client==5.1.0
   - jupyter-console==5.2.0
   - jupyter-core==4.3.0
-  - nanocut==12.12
   - orderedmultidict==0.7.11
   - prompt-toolkit==1.0.15
   - service-identity==17.0.0
 prefix: /Users/jeremyjordan/anaconda/envs/stock-price-forecasting
-
