@@ -4,7 +4,7 @@ Here is my capstone project from the Udacity Machine Learning Nanodegree.
 ## Overview
 This project attempts to extract useful signal from the text of public company quarterly earnings transcripts. Although the proposed approach does not prove to be successful, this notebook contains interesting analysis and a few potential developments that could improve this model to a useful (and profitable) level.
 
-For more detailed analysis, read the written report [here](/Stock\ price\ forecasting.pdf).
+For more detailed analysis, read the written report [here](/Stock%20price%20forecasting.pdf).
 
 For a short summary:
 
