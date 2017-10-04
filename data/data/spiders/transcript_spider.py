@@ -4,7 +4,7 @@ import re
 from furl import furl
 from data.items import TranscriptItem
 from scrapy.http import Request
-from dateutil.parser import parse
+from dateutil.parser import parse as parse_date
 # from scrapy.exceptions import CloseSpider
 
 class TranscriptSpider(scrapy.Spider):
@@ -42,7 +42,7 @@ class TranscriptSpider(scrapy.Spider):
                 # Scrape basic info from link
                 item['title'] = link.xpath('a[contains(text(), "Earnings Call Transcript")]/text()').extract_first()
                 item['url'] = response.urljoin(link.xpath('a[contains(text(), "Earnings Call Transcript")]/@href').extract_first()+'?part=single')
-                item['date'] = parse(link.css('.date_on_by::text').extract_first())
+                item['date'] = parse_date(link.css('.date_on_by::text').extract_first())
                 item['company'] = company
 
 
